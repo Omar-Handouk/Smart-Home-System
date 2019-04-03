@@ -1,5 +1,7 @@
 package operatingSystems;
 
+
+
 import java.sql.Date;
 
 public abstract class ElectricDevice {
