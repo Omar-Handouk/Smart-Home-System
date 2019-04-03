@@ -3,12 +3,12 @@ package operatingSystems;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MonitoringPower implements Runnable {
+public class MonitoringPower extends OS implements Runnable {
 
 	private final int threshhold;
-	
+
 	private ArrayList<Process> processList;
-	
+
 	public int getThreshhold() {
 		return threshhold;
 	}
@@ -20,20 +20,18 @@ public class MonitoringPower implements Runnable {
 
 	@Override
 	public void run() {
-		
-		while (true)
-		{
+
+		while (true) {
 			ArrayList<Process> sortedProcess = runningProcesses();
-			
+
 			int totalCons = 0;
-			
+
 			for (Process process : sortedProcess) {
-				
-				
+
 			}
 		}
 	}
-	
+
 	public ArrayList<Process> runningProcesses() {
 		// we need to sort periodically
 		ArrayList<Process> list = new ArrayList<>();
